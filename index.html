@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Segment 1: Logo and Title -->
+        <div class="segment-1">
+            <img src="renny.png.png" alt="Logo" class="logo">
+            <h1>Insurance Information Form</h1>
+            <div class="contact-info">
+                <p>Call Us: 469-679-2410</p>
+            </div>
+        </div>
+
+        <!-- Segment 2: Form -->
+        <form id="insuranceForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-row">
+                    <label class="label-left" for="surname">Surname:</label>
+                    <input class="input-long" type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="givenName">Given Name:</label>
+                    <input class="input-long" type="text" id="givenName" name="givenName" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="taxId">Tax ID:</label>
+                    <input class="input-right" type="text" id="taxId" name="taxId" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="gender">Gender:</label>
+                    <select class="input-right" id="gender" name="gender" required>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="birthDate">Birth Date:</label>
+                    <input class="input-right" type="date" id="birthDate" name="birthDate" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="maritalStatus">Marital Status:</label>
+                    <select class="input-right" id="maritalStatus" name="maritalStatus" required>
+                        <option value="S">Single</option>
+                        <option value="M">Married</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="occupation">Occupation:</label>
+                    <input class="input-right" type="text" id="occupation" name="occupation">
+                </div>
+            </fieldset>
+
+            <!-- Segment 3: Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-row">
+                    <label class="label-left" for="homePhone">Home Phone:</label>
+                    <input class="input-right" type="text" id="homePhone" name="homePhone">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="businessPhone">Business Phone:</label>
+                    <input class="input-right" type="text" id="businessPhone" name="businessPhone">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="cellPhone">Cell Phone:</label>
+                    <input class="input-right" type="text" id="cellPhone" name="cellPhone">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="email">Email Address:</label>
+                    <input class="input-right" type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <!-- Segment 4: Driver Information -->
+            <fieldset>
+                <legend>Driver Information</legend>
+                <div class="form-row">
+                    <label class="label-left" for="driverSurname">Driver Surname:</label>
+                    <input class="input-right" type="text" id="driverSurname" name="driverSurname" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="driverGivenName">Driver Given Name:</label>
+                    <input class="input-right" type="text" id="driverGivenName" name="driverGivenName" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="driverTaxId">Driver Tax ID:</label>
+                    <input class="input-right" type="text" id="driverTaxId" name="driverTaxId" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="driverGender">Driver Gender:</label>
+                    <select class="input-right" id="driverGender" name="driverGender" required>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="driverBirthDate">Driver Birth Date:</label>
+                    <input class="input-right" type="date" id="driverBirthDate" name="driverBirthDate" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="driverMaritalStatus">Driver Marital Status:</label>
+                    <select class="input-right" id="driverMaritalStatus" name="driverMaritalStatus" required>
+                        <option value="S">Single</option>
+                        <option value="M">Married</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Segment 5: Vehicle Information -->
+            <fieldset>
+                <legend>Vehicle Information</legend>
+                <div class="form-row">
+                    <label class="label-left" for="vehicleVin">Vehicle VIN:</label>
+                    <input class="input-right" type="text" id="vehicleVin" name="vehicleVin" required>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="coverageComp">Comprehensive Coverage:</label>
+                    <input class="input-right" type="number" id="coverageComp" name="coverageComp" placeholder="Deductible Amount">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="coverageColl">Collision Coverage:</label>
+                    <input class="input-right" type="number" id="coverageColl" name="coverageColl" placeholder="Deductible Amount">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="coverageTl">Third Party Liability Coverage:</label>
+                    <input class="input-right" type="number" id="coverageTl" name="coverageTl" placeholder="Coverage Limit">
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="coverageRreim">Rental Reimbursement Coverage:</label>
+                    <input class="input-right" type="checkbox" id="coverageRreim" name="coverageRreim">
+                </div>
+            </fieldset>
+
+            <!-- Segment 6: Home Line Business Information -->
+            <fieldset>
+                <legend>Home Line Business Information</legend>
+                <div class="form-row">
+                    <label class="label-left" for="homeQuestion">Question Answer:</label>
+                    <select class="input-right" id="homeQuestion" name="homeQuestion">
+                        <option value="NO">NO</option>
+                        <option value="YES">YES</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Segment 7: Auto Line Business Information -->
+            <fieldset>
+                <legend>Auto Line Business Information</legend>
+                <div class="form-row">
+                    <label class="label-left" for="autoQuestion1">Question 1:</label>
+                    <select class="input-right" id="autoQuestion1" name="autoQuestion1">
+                        <option value="NO">NO</option>
+                        <option value="YES">YES</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="label-left" for="autoQuestion2">Question 2:</label>
+                    <select class="input-right" id="autoQuestion2" name="autoQuestion2">
+                        <option value="NO">NO</option>
+                        <option value="YES">YES</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="button">Generate XML</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
