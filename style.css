@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Style */
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Segment 1 Styles */
+.segment-1 {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding around the content */
+    margin-bottom: 30px; /* Space below Segment 1 */
+    text-align: center; /* Center align content */
+    border: none; /* No border */
+    position: relative; /* To control positioning of elements inside */
+}
+
+/* Logo Style */
+.segment-1 .logo {
+    max-width: 400px; /* Adjust the max width as needed */
+    margin: 0 auto; /* Center align logo */
+    display: block; /* Block display for centering */
+}
+
+/* Title Style */
+.segment-1 h1 {
+    margin-top: 100px; /* Space above the title */
+    color: #333; /* Dark color for title text */
+    margin-bottom: 15px; /* Space below title to reduce gap */
+}
+
+/* Contact Information Style */
+.contact-info {
+    margin-top: 10px; /* Space above contact info */
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Fieldset Style */
+fieldset {
+    border: none; /* No border around fieldset */
+    margin-bottom: 20px; /* Space below fieldset */
+}
+
+/* Legend Style */
+legend {
+    font-weight: bold; /* Bold text for legends */
+    margin-bottom: 10px; /* Space below legend */
+    text-align: center; /* Center align legend text */
+}
+
+/* Form Row Style */
+.form-row {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 5px; /* Reduced space below each row */
+}
+
+/* Label Style */
+.label-left {
+    flex: 1; /* Label takes up 1 part */
+    text-align: left; /* Align label text to the left */
+    margin-right: 5px; /* Space between label and input */
+    margin-bottom: 0; /* No margin below label */
+}
+
+/* Input Styles */
+.input-long, .input-right {
+    flex: 2; /* Input takes up 2 parts */
+    width: 600%; /* Full width for inputs */
+    max-width: 500px; /* Max width for inputs */
+    padding: 6px; /* Padding inside the input box */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    margin-bottom: 0; /* No space below the input box */
+}
+
+/* Button Style */
+button {
+    display: block; /* Block display for button */
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: #007BFF; /* Blue background */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    font-size: 16px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Button Hover Style */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
