@@ -1,4 +1,4 @@
-/* Global Styles */
+ Global Styles 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -43,7 +43,7 @@ h1 {
 
 /* Form Styles */
 form {
-    background-color: #ffffff; /* Dark blue background */
+    background-color: #eceeee; /* Dark blue background */
     color: #100f0f; /* White text color */
     padding: 70px;
     border-radius: 50px;
