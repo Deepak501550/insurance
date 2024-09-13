@@ -3,7 +3,7 @@ document.getElementById('insuranceForm').addEventListener('submit', function(eve
 
     const formData = new FormData(event.target);
 
-    // Collecting form data (same as before)
+    // Collecting form data
     const mainDriverLastName = formData.get('surname');
     const mainDriverFirstName = formData.get('givenName');
     const gender = formData.get('gender');
@@ -18,7 +18,7 @@ document.getElementById('insuranceForm').addEventListener('submit', function(eve
     const coverageColl = formData.get('coverageColl');
     const coverageRreim = formData.get('coverageRreim') ? 'YES' : 'NO';
 
-    // Creating XML data (same as before)
+    // Creating XML data
     let xmlData = `<ACORD>
 <SignonRq>
 <SignonPswd>
@@ -107,11 +107,12 @@ document.getElementById('insuranceForm').addEventListener('submit', function(eve
     URL.revokeObjectURL(url);
     a.remove(); // Remove the anchor after download
 
-    // Prepare and open email client
+    // Open the user's email client and fill in recipient and subject
+    const mailRecipient = "onuser5015@gmail.com";
     const mailSubject = "Insurance XML Data";
     const mailBody = encodeURIComponent("Please find the attached XML file with insurance data.\n\nYou can manually attach the XML file from your downloads.");
-    const mailtoLink = `mailto:?subject=${mailSubject}&body=${mailBody}`;
-    window.location.href = mailtoLink; // Opens default email client
+    const mailtoLink = `mailto:${mailRecipient}?subject=${mailSubject}&body=${mailBody}`;
+    window.location.href = mailtoLink; // Opens default email client with recipient
 });
 
 function generateUniqueId() {
